@@ -1,0 +1,40 @@
+body{
+	background-color: lightgray;
+}
+.navbar{
+	height: 80px;
+	background-color: #fff;
+}
+.navbar-nav.ml-auto.right-nav li{
+	padding-right: 20px;
+}
+.navbar ul li{
+	font-size: 20px;
+	font-weight: 600;
+}
+.sub-menu ul{
+	background-color: #fff;
+	height: 45px;
+	margin-top: 20px;
+}
+.sub-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	padding-right: 40px;
+	padding-left: 40px;
+	color: #000;
+	
+}
+.sub-menu ul li.active{
+	background-color: orange
+}
+.sub-menu ul li:hover{
+	color: #fff;
+	background-color:orange;
+	cursor: pointer;
+}
+.jobs{
+	background-color: #fff;
+	padding: 20px;
+}

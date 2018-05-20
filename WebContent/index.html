@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="jsp/css/menu.css">
+	<title></title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><h1><span style="color: orange;">Vibrant</span>Mind </h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="jsp/JobView.jsp">Jobs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Placements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto right-nav ">
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm btn-outline-info" href="#" data-toggle="modal" data-target="#registerModal">REGISTER <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm btn-outline-info" href="#" data-toggle="modal" data-target="#exampleModal">LOGIN</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Login Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<form action="jsp/Validate.jsp" method="POST">
+	        <div class="form-group">
+	        	<label for="username">Email</label>
+	        	<input type="text" name="username" class="form-control" placeholder="Enter your email ID">
+	        </div>
+	        <div class="form-group">
+	        	<label for="password">Password</label>
+	        	<input type="password" name="password" class="form-control" placeholder="Enter your password">
+	        </div>
+	        <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+	     </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Register Modal -->
+<div class="modal fade bd-example-modal-lg" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+  <form action="jsp/RegisterFinal.jsp" method="post">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	
+			<div class="row">
+		    	<div class="col-md-6">
+		    		<div class="form-group">
+		      			<label for="id">Name:</label>
+		      			<input type="text" class="form-control"  name="uname" placeholder="Enter Username">
+		    		</div>
+		  		</div>
+		    	<div class="col-md-6">
+			    	<div class="form-group">
+			      		<label for="email">E-mail:</label>
+			      		<input type="text" class="form-control"  placeholder="Enter email" name="email">
+			    	</div>
+		  		</div>
+		  		<div class="col-md-6">
+		    		<div class="form-group">
+		      			<label for="Conatct">Contact:</label>
+		      			<input type="text" class="form-control"  placeholder="Enter Contact" name="contact">
+		    		</div>
+		  		</div>
+		  		<div class="col-md-6">
+		    		<div class="form-group">
+		      			<label for="Degree">Degree:</label>
+		      			<input type="text" class="form-control"  placeholder="Enter Degree" name="degree">
+		    		</div>
+		  		</div>
+		   		<div class="col-md-6">
+		    		<div class="form-group">
+		      			<label for="Passing-Year">Passing Year:</label>
+		      			<input type="text" class="form-control"  placeholder="Enter Passing Year" name="year">
+		    		</div>
+		  		</div>
+		  		<div class="col-md-6">
+		    		<div class="form-group">
+		      			<label for="Password">Password:</label>
+		      			<input type="Password" class="form-control"  placeholder="Enter Password" name="pass">
+		    		</div>
+		  		</div> 
+		 </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </div>
+    </div>
+    </form>
+    </div>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+	<div style="margin-top: 40px;">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card bg-dark text-white">
+			  <img class="card-img" src="https://media.istockphoto.com/photos/business-coach-picture-id541976598?k=6&m=541976598&s=612x612&w=0&h=UEt_ulJd7xuhaoAQYJePoSKTNI_uED9FUjKbBqlmV_0=" alt="Card image" height="470px">
+			  <div class="card-img-overlay">
+			    <h5 class="card-title">Card title</h5>
+			    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			    <p class="card-text">Last updated 3 mins ago</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>

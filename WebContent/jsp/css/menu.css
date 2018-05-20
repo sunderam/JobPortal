@@ -1,0 +1,47 @@
+body{
+	background-color: lightgray;
+}
+.navbar{
+	height: 80px;
+	background-color: #fff;
+}
+.navbar-nav.ml-auto.right-nav li{
+	padding-right: 20px;
+}
+.navbar ul li{
+	font-size: 20px;
+	font-weight: 600;
+}
+.block1{
+	margin-top: 40px;
+}
+.model1{
+	padding: 10px;
+	height: 300px;
+}
+.main-content{
+	padding-top: 20px;
+	background-color: #fff;
+	border-top: 5px solid lightgray;
+	min-height: 400px;
+	color: #000;
+}
+.sidebar{
+	padding-left: 0px;
+	padding-right:20px;
+	margin-top: 10px;
+	text-align: left;
+}
+.sidebar ul li{
+	padding-top: 20px;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+.profile{
+	padding: 20px;
+	background-color:;
+}
+.jobs{
+	padding: 20px;
+}
